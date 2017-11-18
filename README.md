@@ -20,3 +20,22 @@ git clone https://github.com/ColorFuzzy/dot.tmux.conf.git ~/.tmux
 ln -s ~/.tmux/tmux.conf ~/.tmux.conf
 
 ```
+
+# basic usage
+
+*@ == C-q*
+- @?/: => help/command
+- @c/n/p/w/,/0-9 => window create/next/previous/select/rename/choice
+- @d/s/$/(/) =? session detach/select/rename/previous/next
+- @%/" => pane vsplit/split
+
+*help-mode*
+C-s Enter n/N
+
+*command mode*
+:new -s session-name
+:source-file ~/.tmux.conf 
+
+*shell*
+tmux attach
+tmux source-file ~/.tmux.conf

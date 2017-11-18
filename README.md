@@ -23,6 +23,11 @@ ln -s ~/.tmux/tmux.conf ~/.tmux.conf
 
 # basic usage
 
+*copy paste*
+@-[ => enter
+Ctrl-Space Ctrl-w
+@-] => paste
+
 *@ == C-q*
 - @?/: => help/command
 - @c/n/p/w/,/0-9 => window create/next/previous/select/rename/choice
